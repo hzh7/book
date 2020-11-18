@@ -5,7 +5,7 @@ name: 'Gitbook Action Build'
 on:
     push:
         branches:
-            - main # trigger branch
+            - master # trigger branch
 
 jobs:
     build:
