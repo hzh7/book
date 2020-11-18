@@ -1,0 +1,37 @@
+{
+  "title": "我的代码手册",
+  "author": "胡朕豪",
+  "language": "zh-hans",
+  "plugins": [
+    "expandable-chapters",
+    "intopic-toc",
+    "code",
+    "hide-element",
+    "splitter",
+    "back-to-top-button",
+    "-lunr",
+    "-search",
+    "search-pro",
+    "advanced-emoji"
+  ],
+  "pluginsConfig": {
+    "hide-element": {
+      "elements": [
+        ".gitbook-link"
+      ]
+    },
+    "intopic-toc": {
+      "selector": ".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6",
+      "mode": "nested",
+      "maxDepth": 4,
+      "isCollapsed": true,
+      "isScrollspyActive": true,
+      "visible": true,
+      "label": {
+        "de": "In diesem Artikel",
+        "en": "In this article",
+        "zh-hans": "本文目录"
+      }
+    }
+  }
+}

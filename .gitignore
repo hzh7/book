@@ -1,0 +1,19 @@
+# Typically *NIX text editors, by default, append '~' to files on saving to make backups
+*~
+
+build/
+/build
+*/build
+*/**/build
+
+target/
+/target
+*.class
+
+
+.vscode/
+settings.json
+.vscode/settings.json
+
+/node_modules
+/_book
