@@ -4,7 +4,6 @@
 - Linux
 
     - [Linux常用命令](Linux/常用命令.md)
-    - [实验室机器](Linux/实验室机器.md)
 
 - 计算机基础
 
@@ -21,7 +20,7 @@
 
 - Java
 
-    - [基础.md](Java/基础.md)
+    - [基础](Java/基础.md)
     - [代码段](Java/代码段.md)
 
 - Python

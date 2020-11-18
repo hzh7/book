@@ -4,7 +4,6 @@
 
 - Linux
     - [Linux常用命令](Linux/常用命令.md)
-    - [实验室机器](Linux/实验室机器.md)
 
 
 - 计算机基础
