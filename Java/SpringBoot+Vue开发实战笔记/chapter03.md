@@ -1,8 +1,10 @@
-# 整合Thymeleaf
+# 第三章 Spring Boot 整合视图层技术
+
+## 整合Thymeleaf
 
 
 
-## 添加依赖
+### 添加依赖
 
 ```xml
 <dependencies>
@@ -15,7 +17,7 @@
 
 
 
-## 配置Thymeleaf
+### 配置Thymeleaf
 
 ```properties
 #thymelea模板配置
@@ -30,7 +32,7 @@ spring.thymeleaf.suffix=.html
 
 
 
-## 控制器代码
+### 控制器代码
 
 ```java
 // Book.java
@@ -77,7 +79,7 @@ public class BookController {
 
 
 
-## 创建视图
+#### 创建视图
 
 resources/templates/books.html
 
@@ -107,7 +109,7 @@ resources/templates/books.html
 
 
 
-## 运行
+### 运行
 
 http://localhost:8080/books
 
