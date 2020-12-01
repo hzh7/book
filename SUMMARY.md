@@ -28,6 +28,9 @@
         - [Chapter03](Java/SpringBoot+Vue开发实战笔记/chapter03.md)
         - [Chapter04](Java/SpringBoot+Vue开发实战笔记/chapter04.md)
         - [Chapter05](Java/SpringBoot+Vue开发实战笔记/chapter05.md)
+        - [Chapter06](Java/SpringBoot+Vue开发实战笔记/chapter06.md)
+        - [Chapter07](Java/SpringBoot+Vue开发实战笔记/chapter07.md)
+        - [Chapter08](Java/SpringBoot+Vue开发实战笔记/chapter08.md)
     - [代码段](Java/代码段.md)
 
 - Python
