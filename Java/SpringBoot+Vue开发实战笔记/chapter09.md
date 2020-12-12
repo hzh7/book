@@ -201,9 +201,46 @@ spring.redis.jedis.pool.min-idle=0
 
 ## 9.3 Redis集群缓存
 
-缓存配置
+### 缓存配置
+
+其余配置同第六章redis集群配置
 
 ```java
-
+//@Configuration  书上加了这个注解，实测加了会报错
+public class RedisCacheConfig {
+    @Autowired
+    RedisConnectionFactory conFactory;
+    @Bean
+    RedisCacheManager redisCacheManager(){
+        Map<String, RedisCacheConfiguration> configMap = new HashMap<>();
+        RedisCacheConfiguration redisConnection = RedisCacheConfiguration.defaultCacheConfig()
+                .prefixKeysWith("ihao:")
+                .disableCachingNullValues()
+                .entryTtl(Duration.ofMinutes(30));
+        configMap.put("c1", redisConnection);
+        RedisCacheWriter cacheWriter = RedisCacheWriter.nonLockingRedisCacheWriter(conFactory);
+        RedisCacheManager redisCacheManager = new RedisCacheManager(
+                cacheWriter,
+                RedisCacheConfiguration.defaultCacheConfig(),
+                configMap);
+        return redisCacheManager;
+    }
+}
 ```
 
+### 代码
+
+其余代码与上一下节一致
+
+### 测试
+
+```bash
+getBookById
+book:这本书是三国演义
+book2:这本书是三国演义
+deleteBookById
+getBookById
+getBookById2
+```
+
+![image-20201208084759510](chapter09/image-20201208084759510.png)
