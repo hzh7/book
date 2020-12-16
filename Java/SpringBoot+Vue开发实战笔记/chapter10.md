@@ -798,7 +798,9 @@ get: http://localhost:8080/admin/hello?access_token=bd00cf8b-0ad9-445e-92f5-1176
 }
 ```
 
+reids：
 
+![image-20201216095908439](chapter10/image-20201216095908439.png)
 
 ## 10.5 整合 Shiro
 
