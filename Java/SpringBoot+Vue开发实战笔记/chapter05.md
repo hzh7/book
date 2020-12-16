@@ -47,7 +47,8 @@ INSERT INTO book (id,name,author) VALUES (1, '三国演义', '罗贯中'), (2, '
 
 ```properties
 spring.datasource.type=com.alibaba.druid.pool.DruidDataSource
-spring.datasource.url=jdbc:mysql://59.78.194.153:3306/study
+# spring.datasource.url=jdbc:mysql://59.78.194.153:3306/study
+spring.datasource.url=jdbc:mysql://59.78.194.153:3306/study?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Hongkong
 spring.datasource.username=root
 spring.datasource.password=123456
 ```
