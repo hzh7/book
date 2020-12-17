@@ -44,3 +44,11 @@ git reset --mixed HEAD~1
 撤回最近一次的commit(撤销commit，撤销git add,还原改动的代码)  
 git reset --hard HEAD~1 
 ```
+
+## git 删除
+```bash
+# use --cached to keep the file
+$ git rm --cached xxx.pdf
+# -f to force removal
+$ git rm -f xxx.pdf
+```
