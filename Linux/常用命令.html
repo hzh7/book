@@ -1,0 +1,912 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Linux常用命令 · 我的代码手册</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="胡朕豪">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-intopic-toc/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Linux
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1" data-path="常用命令.html">
+            
+                <a href="常用命令.html">
+            
+                    
+                    Linux常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    计算机基础
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../403/数据结构.html">
+            
+                <a href="../403/数据结构.html">
+            
+                    
+                    数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../403/算法模板.html">
+            
+                <a href="../403/算法模板.html">
+            
+                    
+                    算法模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    技能树
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../技能树/阅读笔记.html">
+            
+                <a href="../技能树/阅读笔记.html">
+            
+                    
+                    阅读笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../技能树/git.html">
+            
+                <a href="../技能树/git.html">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../技能树/踩坑.html">
+            
+                <a href="../技能树/踩坑.html">
+            
+                    
+                    踩坑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../技能树/Docker.html">
+            
+                <a href="../技能树/Docker.html">
+            
+                    
+                    Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../技能树/工具.html">
+            
+                <a href="../技能树/工具.html">
+            
+                    
+                    工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../技能树/kafka.html">
+            
+                <a href="../技能树/kafka.html">
+            
+                    
+                    Kafka
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Java
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../Java/基础.html">
+            
+                <a href="../Java/基础.html">
+            
+                    
+                    基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" >
+            
+                <span>
+            
+                    
+                    SpringBoot+Vue开发实战笔记
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="../Java/SpringBoot+Vue开发实战笔记/chapter01.html">
+            
+                <a href="../Java/SpringBoot+Vue开发实战笔记/chapter01.html">
+            
+                    
+                    Chapter01
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" data-path="../Java/SpringBoot+Vue开发实战笔记/chapter02.html">
+            
+                <a href="../Java/SpringBoot+Vue开发实战笔记/chapter02.html">
+            
+                    
+                    Chapter02
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" data-path="../Java/SpringBoot+Vue开发实战笔记/chapter03.html">
+            
+                <a href="../Java/SpringBoot+Vue开发实战笔记/chapter03.html">
+            
+                    
+                    Chapter03
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.4" data-path="../Java/SpringBoot+Vue开发实战笔记/chapter04.html">
+            
+                <a href="../Java/SpringBoot+Vue开发实战笔记/chapter04.html">
+            
+                    
+                    Chapter04
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.5" data-path="../Java/SpringBoot+Vue开发实战笔记/chapter05.html">
+            
+                <a href="../Java/SpringBoot+Vue开发实战笔记/chapter05.html">
+            
+                    
+                    Chapter05
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.6" data-path="../Java/SpringBoot+Vue开发实战笔记/chapter06.html">
+            
+                <a href="../Java/SpringBoot+Vue开发实战笔记/chapter06.html">
+            
+                    
+                    Chapter06
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.7" data-path="../Java/SpringBoot+Vue开发实战笔记/chapter07.html">
+            
+                <a href="../Java/SpringBoot+Vue开发实战笔记/chapter07.html">
+            
+                    
+                    Chapter07
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.8" data-path="../Java/SpringBoot+Vue开发实战笔记/chapter08.html">
+            
+                <a href="../Java/SpringBoot+Vue开发实战笔记/chapter08.html">
+            
+                    
+                    Chapter08
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.9" data-path="../Java/SpringBoot+Vue开发实战笔记/chapter09.html">
+            
+                <a href="../Java/SpringBoot+Vue开发实战笔记/chapter09.html">
+            
+                    
+                    Chapter09
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.10" data-path="../Java/SpringBoot+Vue开发实战笔记/chapter10.html">
+            
+                <a href="../Java/SpringBoot+Vue开发实战笔记/chapter10.html">
+            
+                    
+                    Chapter10
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.11" data-path="../Java/SpringBoot+Vue开发实战笔记/chapter11.html">
+            
+                <a href="../Java/SpringBoot+Vue开发实战笔记/chapter11.html">
+            
+                    
+                    Chapter11
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.12" data-path="../Java/SpringBoot+Vue开发实战笔记/chapter12.html">
+            
+                <a href="../Java/SpringBoot+Vue开发实战笔记/chapter12.html">
+            
+                    
+                    Chapter12
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.13" data-path="../Java/SpringBoot+Vue开发实战笔记/chapter13.html">
+            
+                <a href="../Java/SpringBoot+Vue开发实战笔记/chapter13.html">
+            
+                    
+                    Chapter13
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../Java/代码段.html">
+            
+                <a href="../Java/代码段.html">
+            
+                    
+                    代码段
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Python
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../Python/基础.html">
+            
+                <a href="../Python/基础.html">
+            
+                    
+                    Python基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../Python/数据库.html">
+            
+                <a href="../Python/数据库.html">
+            
+                    
+                    数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    前端
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../前端/HTML.html">
+            
+                <a href="../前端/HTML.html">
+            
+                    
+                    HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    数据库
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../数据库/HiveSQL.html">
+            
+                <a href="../数据库/HiveSQL.html">
+            
+                    
+                    HiveSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../数据库/MySQL.html">
+            
+                <a href="../数据库/MySQL.html">
+            
+                    
+                    MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../数据库/Redis.html">
+            
+                <a href="../数据库/Redis.html">
+            
+                    
+                    Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Linux常用命令</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="linux&#x5E38;&#x7528;&#x547D;&#x4EE4;">Linux&#x5E38;&#x7528;&#x547D;&#x4EE4;</h1>
+<h2 id="&#x67E5;&#x770B;&#x6307;&#x5B9A;&#x7AEF;&#x53E3;&#x7684;&#x8FDB;&#x7A0B;">&#x67E5;&#x770B;&#x6307;&#x5B9A;&#x7AEF;&#x53E3;&#x7684;&#x8FDB;&#x7A0B;</h2>
+<pre><code class="lang-bash">netstat -ano|findstr 8080
+</code></pre>
+<h2 id="&#x7EC8;&#x7AEF;-sockte-&#x547D;&#x4EE4;">&#x7EC8;&#x7AEF; sockte &#x547D;&#x4EE4;</h2>
+<pre><code class="lang-bash">[nc -lk 9000]
+</code></pre>
+<h2 id="&#x67E5;&#x770B;-linux-&#x5185;&#x6838;&#x7248;&#x672C;&#x547D;&#x4EE4;">&#x67E5;&#x770B; Linux &#x5185;&#x6838;&#x7248;&#x672C;&#x547D;&#x4EE4;</h2>
+<pre><code class="lang-bash">cat /proc/version
+uname <span class="hljs-_">-a</span>
+</code></pre>
+<h2 id="&#x67E5;&#x770B;-linux-&#x7CFB;&#x7EDF;&#x7248;&#x672C;&#x7684;&#x547D;&#x4EE4;">&#x67E5;&#x770B; Linux &#x7CFB;&#x7EDF;&#x7248;&#x672C;&#x7684;&#x547D;&#x4EE4;</h2>
+<pre><code class="lang-bash">lsb_release <span class="hljs-_">-a</span>   &#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x9002;&#x7528;&#x4E8E;&#x6240;&#x6709;&#x7684;Linux&#x53D1;&#x884C;&#x7248;&#xFF0C;&#x5305;&#x62EC;Redhat&#x3001;SuSE&#x3001;Debian&#x2026;&#x7B49;&#x53D1;&#x884C;&#x7248;&#x3002;
+cat /etc/redhat-release  &#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x53EA;&#x9002;&#x5408;Redhat&#x7CFB;&#x7684;Linux&#xFF1A;
+cat /etc/issue   &#x6B64;&#x547D;&#x4EE4;&#x4E5F;&#x9002;&#x7528;&#x4E8E;&#x6240;&#x6709;&#x7684;Linux&#x53D1;&#x884C;&#x7248;&#x3002;
+</code></pre>
+<h2 id="&#x67E5;&#x770B;&#x6587;&#x4EF6;&#x5927;&#x5C0F;">&#x67E5;&#x770B;&#x6587;&#x4EF6;&#x5927;&#x5C0F;</h2>
+<pre><code class="lang-bash">du -h --max-depth=2 | sort -n
+df -lh
+
+df -hl &#x67E5;&#x770B;&#x78C1;&#x76D8;&#x5269;&#x4F59;&#x7A7A;&#x95F4;
+
+df -h &#x67E5;&#x770B;&#x6BCF;&#x4E2A;&#x6839;&#x8DEF;&#x5F84;&#x7684;&#x5206;&#x533A;&#x5927;&#x5C0F;
+
+du -sh [&#x76EE;&#x5F55;&#x540D;] &#x8FD4;&#x56DE;&#x8BE5;&#x76EE;&#x5F55;&#x7684;&#x5927;&#x5C0F;
+
+du -sm [&#x6587;&#x4EF6;&#x5939;] &#x8FD4;&#x56DE;&#x8BE5;&#x6587;&#x4EF6;&#x5939;&#x603B;M&#x6570;
+
+du -h [&#x76EE;&#x5F55;&#x540D;] &#x67E5;&#x770B;&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x7684;&#x6240;&#x6709;&#x6587;&#x4EF6;&#x5927;&#x5C0F;&#xFF08;&#x5305;&#x542B;&#x5B50;&#x6587;&#x4EF6;&#x5939;&#xFF09;
+
+[Linux &#x67E5;&#x770B;&#x78C1;&#x76D8;&#x7A7A;&#x95F4;](https://www.runoob.com/w3cnote/linux-view-disk-space.html)
+</code></pre>
+<h2 id="&#x4F20;&#x8F93;&#x6587;&#x4EF6;">&#x4F20;&#x8F93;&#x6587;&#x4EF6;</h2>
+<pre><code class="lang-bash">&#x5355;&#x4E2A;&#x6587;&#x4EF6;&#xFF1A;scp xxx.jar 59.78.194.17:/home
+&#x6587;&#x4EF6;&#x5939;  &#xFF1A;scp -r xxx/ 59.78.194.17:/home
+</code></pre>
+<h2 id="centos-7-&#x5F00;&#x653E;&#x9632;&#x706B;&#x5899;&#x7AEF;&#x53E3;&#x547D;&#x4EE4;">CentOS 7 &#x5F00;&#x653E;&#x9632;&#x706B;&#x5899;&#x7AEF;&#x53E3;&#x547D;&#x4EE4;</h2>
+<pre><code class="lang-bash">(base) [root@localhost ~]<span class="hljs-comment"># firewall-cmd --zone=public --add-port=80/tcp --permanent</span>
+success
+(base) [root@localhost ~]<span class="hljs-comment"># firewall-cmd --reload</span>
+success
+</code></pre>
+<blockquote>
+<p><a href="https://blog.csdn.net/achang21/article/details/52538049" target="_blank">https://blog.csdn.net/achang21/article/details/52538049</a></p>
+</blockquote>
+<h2 id="&#x67E5;&#x770B;&#x6307;&#x5B9A;-pid-&#x7684;&#x8FDB;&#x7A0B;&#x8BE6;&#x60C5;">&#x67E5;&#x770B;&#x6307;&#x5B9A; PID &#x7684;&#x8FDB;&#x7A0B;&#x8BE6;&#x60C5;</h2>
+<pre><code class="lang-bash">ll /proc/PID
+</code></pre>
+<h2 id="&#x6539;&#x53D8;sh-&#x6587;&#x4EF6;&#x4E3A;&#x53EF;&#x6267;&#x884C;">&#x6539;&#x53D8;.sh &#x6587;&#x4EF6;&#x4E3A;&#x53EF;&#x6267;&#x884C;</h2>
+<pre><code class="lang-bash">chmod +x XXX.sh
+</code></pre>
+<h2 id="error-&#x5904;&#x7406;">Error &#x5904;&#x7406;</h2>
+<h3 id="binbashm-&#x574F;&#x7684;&#x89E3;&#x91CA;&#x5668;-&#x6CA1;&#x6709;&#x8BE5;&#x6587;&#x4EF6;&#x6216;&#x76EE;&#x5F55;">/bin/bash^M: &#x574F;&#x7684;&#x89E3;&#x91CA;&#x5668;: &#x6CA1;&#x6709;&#x8BE5;&#x6587;&#x4EF6;&#x6216;&#x76EE;&#x5F55;</h3>
+<pre><code class="lang-bash">sed -i <span class="hljs-string">&apos;s/\r$//&apos;</span> xxx.sh
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x5728; Windows &#x4E0B;&#x7F16;&#x8F91;&#x8FC7;&#xFF0C;&#x5728; Windows &#x4E0B;&#x6BCF;&#x4E00;&#x884C;&#x7ED3;&#x5C3E;&#x662F;\n\r&#xFF0C;&#x800C; Linux &#x4E0B;&#x5219;&#x662F;\n
+&#x8BE5;&#x547D;&#x4EE4;&#x4F1A;&#x628A; xxx.sh &#x4E2D;&#x7684;&#x884C;&#x5C3E;&#x7684;\r &#x66FF;&#x6362;&#x4E3A;&#x7A7A;&#x767D;</p>
+<h2 id="&#x5220;&#x9664;&#x76EE;&#x5F55;&#x4E0B;&#x6587;&#x4EF6;&#x5927;&#x5C0F;&#x4E3A;-0kb-&#x7684;&#x6587;&#x4EF6;">&#x5220;&#x9664;&#x76EE;&#x5F55;&#x4E0B;&#x6587;&#x4EF6;&#x5927;&#x5C0F;&#x4E3A; 0KB &#x7684;&#x6587;&#x4EF6;</h2>
+<pre><code class="lang-bash">find . -name <span class="hljs-string">&quot;*&quot;</span> -type f -size 0c | xargs -n 1 rm <span class="hljs-_">-f</span>
+</code></pre>
+<h2 id="ssh">ssh</h2>
+<pre><code class="lang-bash">ssh-keygen
+ssh-copy-id -i ~/.ssh/id_rsa.pub root@192.168.xx.xx
+
+<span class="hljs-built_in">cd</span> ~/.ssh
+vim authorized_keys
+
+ssh root@192.168.xx.xx
+</code></pre>
+<blockquote>
+<p><a href="https://blog.csdn.net/jeikerxiao/article/details/84105529?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase" target="_blank">https://blog.csdn.net/jeikerxiao/article/details/84105529?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase</a>  </p>
+</blockquote>
+<p>&#x82E5;&#x662F; <code>ssh-copy-id -i ~/.ssh/id_rsa.pub root@192.168.xx.xx</code> &#x65F6;&#x51FA;&#x73B0;&#x62A5;&#x9519;&#xFF1A;</p>
+<pre><code class="lang-bash">/usr/bin/ssh-copy-id: ERROR: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+ERROR: @    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+ERROR: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+ERROR: IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+ERROR: Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+ERROR: It is also possible that a host key has just been changed.
+ERROR: The fingerprint <span class="hljs-keyword">for</span> the ECDSA key sent by the remote host is
+ERROR: SHA256:IttA7rpqS9QiVTNnEwNrlT9j5aXD2GpM/qytuaTlKyE.
+ERROR: Please contact your system administrator.
+ERROR: Add correct host key <span class="hljs-keyword">in</span> /c/Users/iHao/.ssh/known_hosts to get rid of this message.
+ERROR: Offending ECDSA key <span class="hljs-keyword">in</span> /c/Users/iHao/.ssh/known_hosts:11
+ERROR: ECDSA host key <span class="hljs-keyword">for</span> 42.192.123.45 has changed and you have requested strict checking.
+ERROR: Host key verification failed.
+</code></pre>
+<p>&#x539F;&#x56E0;&#x662F;&#x4E4B;&#x524D;&#x5DF2;&#x7ECF;&#x914D;&#x7F6E;&#x8FC7;&#xFF0C;&#x4F46;&#x662F;&#x5931;&#x6548;&#x4E86;&#xFF0C;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#x91CD;&#x65B0;&#x914D;&#x7F6E;&#x7684;&#x8BDD;&#x9700;&#x8981;&#x5148;&#x628A; ~/.ssh/known_hosts &#x91CC;&#x5BF9;&#x5E94;&#x7684;&#x6570;&#x636E;&#x5220;&#x9664;&#x6389;&#x3002;</p>
+<h2 id="&#x6302;&#x5728;&#x786C;&#x76D8;">&#x6302;&#x5728;&#x786C;&#x76D8;</h2>
+<pre><code class="lang-bash">fdisk <span class="hljs-_">-l</span>
+
+Disk /dev/sda: 512.1 GB, 512110190592 bytes, 1000215216 sectors
+...
+Disk /dev/sdb: 1000.2 GB, 1000204886016 bytes, 1953525168 sectors
+Units = sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+Disk label <span class="hljs-built_in">type</span>: dos
+Disk identifier: 0x72a91a19
+
+   Device Boot      Start         End      Blocks   Id  System
+/dev/sdb1            2048  1953525167   976761560   83  Linux
+
+mount /dev/sdb1 /data  <span class="hljs-comment"># &#x8981;&#x6302;&#x8F7D;&#x5230;&#x7684;&#x4F4D;&#x7F6E;</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Linux常用命令","level":"1.2.1","depth":2,"next":{"title":"计算机基础","level":"1.3","depth":1,"ref":"","articles":[{"title":"数据结构","level":"1.3.1","depth":2,"path":"403/数据结构.md","ref":"403/数据结构.md","articles":[]},{"title":"算法模板","level":"1.3.2","depth":2,"path":"403/算法模板.md","ref":"403/算法模板.md","articles":[]}]},"previous":{"title":"Linux","level":"1.2","depth":1,"ref":"","articles":[{"title":"Linux常用命令","level":"1.2.1","depth":2,"path":"Linux/常用命令.md","ref":"Linux/常用命令.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","intopic-toc","code","hide-element","splitter","back-to-top-button","-lunr","-search","search-pro","advanced-emoji"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"intopic-toc":{"isCollapsed":true,"isScrollspyActive":true,"label":{"de":"In diesem Artikel","en":"In this article","zh-hans":"本文目录"},"maxDepth":4,"mode":"nested","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","visible":true},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"胡朕豪","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"我的代码手册","language":"zh-hans","gitbook":"*"},"file":{"path":"Linux/常用命令.md","mtime":"2021-02-07T02:29:48.821Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-07T02:30:39.008Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/gumshoe.polyfills.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
